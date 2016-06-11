@@ -30,7 +30,7 @@ Simply add **pads.localStorage** to your app depenencies.
 var myApp = angular.module('myApp', ['pads.localStorage']);
 ```
 
-**2. Usage For Modules**
+**3. Usage For Modules**
 
 You are ready to use the local storage for your modules.
 
