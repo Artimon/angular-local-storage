@@ -17,8 +17,8 @@ You may have found an answer with the angular local storage!
 Include local-storage.js after angular.js and before your app code as this example shows.
 
 ```html
-<script type='text/javascript' src="angular.min.js"></script>
-<script type='text/javascript' src="vendor/local-storage.js"></script>
+<script type='text/javascript' src="vendor/angular.min.js"></script>
+<script type='text/javascript' src="vendor/angular-pads/local-storage.js"></script>
 <script type='text/javascript' src="app/app.js"></script>
 ```
 
