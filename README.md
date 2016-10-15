@@ -30,24 +30,24 @@ Simply add **pads.localStorage** to your app depenencies.
 var myApp = angular.module('myApp', ['pads.localStorage']);
 ```
 
-**3. Usage For Modules**
+**Usage**
 
 You are ready to use the local storage for your modules.
 
 ```js
-angular.module('myApp').controller('MyCtrl', function ($scope, $padsLocalStorage) {
+angular.module('myApp').controller('MyCtrl', function ($scope, padsLocalStorage) {
     // Optional, the default zone is "anonymous". Can be changed any time.
-    $padsLocalStorage.setZone($scope.userId);
+    padsLocalStorage.setZone($scope.userId);
 
     // Set values into the storage under the namespace 'my-ctrl' with different variable names.
-    $padsLocalStorage.setItem('my-ctrl', 'boolean-value', true);
-    $padsLocalStorage.setItem('my-ctrl', 'number-value', 12.3);
+    padsLocalStorage.setItem('my-ctrl', 'boolean-value', true);
+    padsLocalStorage.setItem('my-ctrl', 'number-value', 12.3);
 
     // Get item, it will return true and not "true", thus you can check with === against true.
-    $padsLocalStorage.getItem('my-ctrl', 'boolean-value', false);
+    padsLocalStorage.getItem('my-ctrl', 'boolean-value', false);
 
     // Remove an item from the storage.
-    $padsLocalStorage.removeItem('my-ctrl', 'boolean-value');
+    padsLocalStorage.removeItem('my-ctrl', 'boolean-value');
 });
 ```
 
